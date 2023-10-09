@@ -1,0 +1,1 @@
+I followed the lesson meticulously from start to finish from the recording and have a solid understanding.
