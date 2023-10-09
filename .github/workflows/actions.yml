@@ -15,7 +15,7 @@ jobs:
 
     environment: 
       name: github-pages
-      url: ${{ steps.pages.outputs.url }}
+      url: ${{ steps.pages.outputs_url }}
 
     runs-on: ubuntu-latest
     steps:
