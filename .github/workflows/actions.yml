@@ -10,20 +10,20 @@ jobs:
     pages: write
     id-token: write
 
-environment: 
-  name:  github-pages
-  url: ${{ steps.pages.outputs.url }}
+  environment: 
+    name:  github-pages
+    url: ${{ steps.pages.outputs.url }}
 
 runs-on: ubuntu-latest
-steps:
- - name: Checkout
+  steps:
+  - name: Checkout
     uses: actions/checkout@v2
- - name: Setup pages
+  - name: Setup pages
     uses: actions/configure-github-pages@v3
- - name: Upload artifact
+  - name: Upload artifact
     uses: actions/upload-artifact@v2
     with: 
-    path: '.'
- - name: Deploy to GH pages
+      path: '.'
+  - name: Deploy to GH pages
     id: deployment
     uses: actions/deploy-pages@v2
