@@ -1,10 +1,10 @@
 jobs:
-  # Build job
+   Build job
   build:
-    # <Not provided for brevity>
+    # Not provided for brevity
     # At a minimum this job should upload artifacts using actions/upload-pages-artifact
 
-  # Deploy job
+   Deploy job
   deploy:
     # Add a dependency to the build job
     needs: build
